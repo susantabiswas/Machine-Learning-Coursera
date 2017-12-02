@@ -18,7 +18,7 @@ J_history = zeros(num_iters, 1);
         %
 
             delta = (1/m) * ( X' * ( X * theta - y));
-            theta = theta - (alpha * delta)
+            theta = theta - (alpha * delta);
 
         % ============================================================
 
