@@ -33,7 +33,9 @@ p = zeros(size(X, 1), 1);
    
     z3 = z2 * Theta2';
     z3 = z3';
+    %p gives the labels which the nn has identified
     [val p ] = max( z3(:,:));  
+    %since indexing for 0 was 10 so make all instances of index 10 as zero in the output
     p(p == 10) = 0;
 
 
